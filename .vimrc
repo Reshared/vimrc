@@ -1,6 +1,5 @@
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'rainglow/vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'mhinz/vim-startify'
@@ -14,10 +13,14 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'junegunn/gv.vim'
 Plugin 'sbdchd/neoformat'
 Plugin 'w0rp/ale'
+Plugin 'w0ng/vim-hybrid'
 call vundle#end()
 
 syntax on
 
+colorscheme hybrid
+
+set background=dark
 set number
 set linespace=3
 set hlsearch
@@ -28,8 +31,6 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set updatetime=100 " 100 ms
-
-colorscheme azure-contrast
 
 let mapleader=','
 let g:mapleader=','

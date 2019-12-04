@@ -1,12 +1,23 @@
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'flazz/vim-colorschemes'                                                                                    
+Plugin 'rainglow/vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 call vundle#end()
 
 syntax on
 
 set number
+set linespace=3
 set hlsearch
+set cursorline
+set autoindent
+set cindent
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
+colorscheme azure-contrast
 
 let mapleader=','
 let g:mapleader=','
